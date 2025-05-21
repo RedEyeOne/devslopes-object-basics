@@ -4,8 +4,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run exercise-2.js",
-      "program": "${workspaceFolder}/exercise-2.js",
+      "name": "Run exercise-3.js",
+      "program": "${workspaceFolder}/exercise-3.js",
       "console": "integratedTerminal"
     }
   ]

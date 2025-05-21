@@ -26,3 +26,29 @@ const dominos = {
   zipcode: 54321,
   acceptsReservations: true,
 };
+
+// YOUR CODE GOES HERE
+
+function pizzaPlace (place) {
+  for (const [key, value] of Object.entries(place)) {
+    console.log(`${key} ${value}`);
+  }
+}
+
+function toppingsPriceRange (place) {
+  const toppings = place.pizzaToppings;
+  const prices = Object.values(toppings);
+  const max = Math.max(...prices);
+  const min = Math.min(...prices);
+  return [min, max];
+}
+
+function calculateAverageRating (pizzaPlace) {
+  const starReviews = pizzaPlace.starReviews;
+  const ratings = Object.values(starReviews);
+  let sum = 0;
+  for (const i = 0; i < ratings.length; i++) {
+    sum += ratings[i];
+  }
+  return (sum / ratings.length);
+}
